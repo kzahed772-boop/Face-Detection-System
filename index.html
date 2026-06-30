@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Face Detection and Recognition</title>
+
+<script defer src="face-api.min.js"></script>
+<script defer src="script.js"></script>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Arial;
+background:#f5f5f5;
+text-align:center;
+}
+
+header{
+background:#e75480;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h2{
+margin:0;
+padding-left:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+.title{
+margin-top:30px;
+}
+
+#video-container{
+margin-top:30px;
+position:relative;
+display:inline-block;
+border:4px solid #e75480;
+border-radius:10px;
+overflow:hidden;
+}
+
+canvas{
+position:absolute;
+top:0;
+left:0;
+}
+
+button{
+margin-top:20px;
+padding:10px 25px;
+border:none;
+background:#ff3b3b;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#cc0000;
+}
+
+section{
+padding:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>Women Safety System</h2>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#live">Live Detection</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section id="home" class="title">
+
+<h1>Women Safety Face Detection System</h1>
+
+<p>Real-time face detection using webcam for women safety monitoring.</p>
+
+</section>
+
+
+<section id="live">
+
+<div id="video-container">
+
+<video id="video" width="640" height="480" autoplay muted></video>
+
+</div>
+
+<br>
+
+<button onclick="alert('Emergency Alert Sent')">Emergency Alert</button>
+
+</section>
+
+
+<section id="about">
+
+<h2>About</h2>
+
+<p>
+This project detects face, age, gender and facial expressions in real time using Face API.js.
+It can be used for security monitoring and women safety applications.
+</p>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Developed by: Zahed Khan</p>
+
+<p>Course: TYBSc Computer Science</p>
+
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("photo1.jpg");
+    background-size: cover;
+
+    
+}
+
+canvas{
+    position: absolute;
+}
+
+h4{
+    display: flex;
+    position: fixed;
+    bottom: 85%;
+    color: white;
+    font-size: xx-large;
+    font-style: normal;
+}
